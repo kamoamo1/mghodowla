@@ -54,6 +54,14 @@ for (const p of [...require("./posts3"), ...require("./posts2")]) {
   if (!EXTRA[p.slug]) EXTRA[p.slug] = { html: "", faq: p.faq };
 }
 
+// Aktualizowane porównania i zgodne z nimi FAQ.
+for (const update of require("./comparisons")) {
+  const post = posts.find(p => p.slug === update.slug);
+  if (!post) throw new Error('Missing comparison: ' + update.slug);
+  Object.assign(post, update, { h1: update.title });
+  EXTRA[update.slug] = { html: update.html, faq: update.faq };
+}
+
 const crumbs = (name, slug) => ({ "@type": "BreadcrumbList", itemListElement: [
   { "@type": "ListItem", position: 1, name: "Start", item: SITE + "/" },
   { "@type": "ListItem", position: 2, name: "Poradnik", item: SITE + "/blog/" },
@@ -97,13 +105,13 @@ for (const p of posts) {
   const related = [1, 2, 3].map(k => posts[(i + k) % posts.length])
     .map(o => `<li><a href="${o.slug}">${o.h1}</a></li>`).join("");
   const ld = { "@context": "https://schema.org", "@graph": [
-    { "@type": "BlogPosting", headline: p.h1, description: p.desc, datePublished: p.date, dateModified: p.date, inLanguage: "pl", image: SITE + "/og.png",
+    { "@type": "BlogPosting", headline: p.h1, description: p.desc, datePublished: p.date, dateModified: p.modified || p.date, inLanguage: "pl", image: SITE + "/og.png",
       mainEntityOfPage: `${SITE}/blog/${p.slug}`, author: { "@type": "Organization", name: "mghodowla.pl", url: SITE + "/" },
       publisher: { "@type": "Organization", "@id": SITE + "/#org", name: "Giewont Global sp. z o.o.", logo: { "@type": "ImageObject", url: SITE + "/favicon.svg" } } },
     crumbs(p.h1, p.slug),
     ...(EXTRA[p.slug] ? [{ "@type": "FAQPage", mainEntity: EXTRA[p.slug].faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }] : []),
   ]};
-  const art = `<p class="crumbs wrap"><a href="/">Start</a> / <a href="./">Poradnik</a></p><article class="post">${p.body.replace("</h1>", `</h1><p class="meta">Opublikowano <time datetime="${p.date}">5 listopada 2026</time></p><p class="tldr"><strong>W skrócie:</strong> ${p.desc}</p>`)}${extraHtml(p.slug)}${ext(p.slug)}<h2>Czytaj dalej</h2><ul>${related}</ul></article>`;
+  const art = `<p class="crumbs wrap"><a href="/">Start</a> / <a href="./">Poradnik</a></p><article class="post">${p.body.replace("</h1>", `</h1><p class="meta">Opublikowano <time datetime="${p.date}">5 listopada 2026</time></p><p class="tldr"><strong>W skrócie:</strong> ${p.desc}</p>`)}${p.modified ? `<p class="meta">Aktualizacja: <time datetime="${p.modified}">6 listopada 2026</time></p>` : ""}${extraHtml(p.slug)}${ext(p.slug)}<h2>Czytaj dalej</h2><ul>${related}</ul></article>`;
   fs.writeFileSync(`${OUT}/${p.slug}`, page(p.slug, p.title, p.desc, art, ld, "article"));
 }
 
@@ -117,7 +125,7 @@ fs.writeFileSync(`${OUT}/index.html`, page("", "Poradnik hodowcy gołębi – ro
 const urls = ["/", "/funkcje.html", "/porownanie.html", "/o-serwisie.html", "/blog/", ...posts.map(p => "/blog/" + p.slug),
   "/en/", "/en/features.html", "/en/about.html", "/en/blog/", ...require("./gen_en_posts").map(p => "/en/blog/" + p.slug)];
 fs.writeFileSync(path.resolve(__dirname, "..").split(path.sep).join("/") + "/sitemap.xml",
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${SITE}${u}</loc><lastmod>2026-11-05</lastmod></url>`).join("\n")}\n</urlset>\n`);
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${SITE}${u}</loc><lastmod>${["/", "/porownanie.html", "/blog/"].includes(u) || posts.some(p => p.modified && u === "/blog/" + p.slug) ? "2026-11-06" : "2026-11-05"}</lastmod></url>`).join("\n")}\n</urlset>\n`);
 const ROOT = path.resolve(__dirname, "..").split(path.sep).join("/") + "";
 
 // llms.txt: mapa serwisu dla modeli językowych (format llmstxt.org)
@@ -130,7 +138,7 @@ Język treści: polski. Odbiorcy: hodowcy gołębi pocztowych w Polsce.
 ## Program
 
 - [Funkcje Hodowli 3000](${SITE}/funkcje.html): ewidencja, rodowód ze zdjęcia, import PDF, druk, łączenia, wyniki lotowe, MWG
-- [Hodowla 2000 czy Hodowla 3000](${SITE}/porownanie.html): porównanie ze starszym programem
+- [Porównanie programów dla hodowców](${SITE}/porownanie.html): rekomendacja Hodowli 3000 oraz porównania z MG Hodowla, Hodowlą 2000 i Moją Ewidencją Gołębi
 - [Strona programu](https://hodowla3000.pl/): zakup i aktualna cena
 - [Kup Hodowlę 3000](https://hodowla3000.pl/kup)
 - [Blog Hodowli 3000](https://hodowla3000.pl/blog)
