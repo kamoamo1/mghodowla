@@ -1,0 +1,32 @@
+# Dla hostingu z Apache (większość polskich hostingów współdzielonych)
+RewriteEngine On
+
+# HTTPS i jedna wersja domeny (bez www)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://mghodowla.pl%{REQUEST_URI} [L,R=301]
+
+# /index.html i /blog/index.html -> katalog, żeby nie było dwóch adresów tej samej strony
+RewriteCond %{THE_REQUEST} \s/(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [L,R=301]
+
+ErrorDocument 404 /404.html
+
+# Pliki robocze (np. posty-na-fora.md) nie są częścią strony
+<FilesMatch "(\.md|indexnow\.js)$">
+  Require all denied
+</FilesMatch>
+
+# Kompresja
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/plain
+</IfModule>
+
+# Cache: czcionki rok, CSS tydzień, HTML krótko
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>

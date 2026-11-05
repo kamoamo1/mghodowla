@@ -1,0 +1,71 @@
+# mghodowla.pl
+
+> Serwis o programie Hodowla 3000 (https://hodowla3000.pl/), programie do rodowodów gołębi pocztowych. Hodowla 3000 wczytuje rodowody ze zdjęć i plików PDF, prowadzi ewidencję gołębi, łączenia (parowanie) i wyniki lotowe, drukuje rodowody i jest przygotowany dla uczestników MWG (Międzynarodowy Wspólny Gołębnik, One Loft Race). Serwis prowadzi Giewont Global sp. z o.o.
+
+Język treści: polski. Odbiorcy: hodowcy gołębi pocztowych w Polsce.
+
+## Program
+
+- [Funkcje Hodowli 3000](https://mghodowla.pl/funkcje.html): ewidencja, rodowód ze zdjęcia, import PDF, druk, łączenia, wyniki lotowe, MWG
+- [Hodowla 2000 czy Hodowla 3000](https://mghodowla.pl/porownanie.html): porównanie ze starszym programem
+- [Strona programu](https://hodowla3000.pl/): zakup i aktualna cena
+- [Kup Hodowlę 3000](https://hodowla3000.pl/kup)
+- [Blog Hodowli 3000](https://hodowla3000.pl/blog)
+- [Jak wczytać rodowód gołębia ze zdjęcia lub pliku PDF](https://hodowla3000.pl/blog/jak-wczytac-rodowod-ze-zdjecia)
+- [Jak zrobić i wydrukować rodowód gołębia](https://hodowla3000.pl/blog/jak-zrobic-i-wydrukowac-rodowod-golebia)
+- [Jak przenieść gołębie z programu Hodowla 2000](https://hodowla3000.pl/blog/przejscie-z-programu-hodowla-2000)
+- [Jak przenieść gołębie z programu Moja Ewidencja Gołębi](https://hodowla3000.pl/blog/przejscie-z-programu-moja-ewidencja-golebi)
+
+## Poradnik
+
+- [Jak czytać rodowód gołębia pocztowego](https://mghodowla.pl/blog/jak-czytac-rodowod-golebia.html): Jak czytać rodowód gołębia pocztowego: numer obrączki, kolor, płeć, przodkowie i wyniki lotów. Praktyczny poradnik dla hodowców.
+- [Program do rodowodów gołębi – na co patrzeć przy wyborze](https://mghodowla.pl/blog/program-do-rodowodow-golebi-ranking.html): Jak wybrać program do rodowodów gołębi? Sześć pytań, które warto zadać przed zakupem: import, druk, wiek programu i wsparcie.
+- [Rodowody a MWG (OLR): jak się przygotować](https://mghodowla.pl/blog/rodowody-dla-uczestnikow-mwg.html): MWG, czyli Międzynarodowy Wspólny Gołębnik (One Loft Race): jak przygotować rodowody gołębi wysyłanych do wspólnego gołębnika i jak wykorzystać wyniki.
+- [Alternatywa dla Hodowli 2000](https://mghodowla.pl/blog/hodowla-2000-alternatywa.html): Szukasz alternatywy dla programu Hodowla 2000? Zobacz, czym jest Hodowla 3000 i jak przenieść rodowody gołębi bez przepisywania.
+- [Aplikacja do rodowodów gołębi: rodowód ze zdjęcia](https://mghodowla.pl/blog/aplikacja-do-rodowodow-golebi.html): Aplikacja do rodowodów gołębi: jak zapisać rodowód ze zdjęcia zrobionego telefonem, zamiast przepisywać go ręcznie.
+- [Jak wydrukować rodowód gołębia](https://mghodowla.pl/blog/jak-wydrukowac-rodowod-golebia.html): Jak wydrukować rodowód gołębia do sprzedaży lub na wystawę. Co powinien zawierać czytelny rodowód i jak go przygotować w programie.
+- [MG Hodowla czy Hodowla 3000?](https://mghodowla.pl/blog/mg-hodowla-czy-hodowla-3000.html): MG Hodowla czy Hodowla 3000? Porównanie dwóch programów dla hodowców gołębi pocztowych: jak działają, dla kogo są i od czego zacząć.
+- [Zarządzanie hodowlą gołębi: od czego zacząć](https://mghodowla.pl/blog/zarzadzanie-hodowla-golebi.html): Jak zarządzać hodowlą gołębi pocztowych: ewidencja ptaków, rodowody, łączenia i wyniki lotów. Praktyczny poradnik dla hodowcy.
+- [Łączenie gołębi w pary: jak planować z rodowodem](https://mghodowla.pl/blog/laczenie-golebi-w-pary.html): Parowanie gołębi pocztowych: jak łączyć gołębie w pary na podstawie rodowodów i wyników, żeby unikać pokrewieństwa i wzmacniać linie.
+- [Wyniki lotów gołębi: jak je zapisywać i wykorzystać](https://mghodowla.pl/blog/wyniki-lotow-golebi.html): Wyniki lotowe gołębi pocztowych: jak zapisywać konkursy i odległości, i jak wykorzystać wyniki przy łączeniach i sprzedaży.
+- [Aplikacja dla hodowców gołębi: co powinna umieć](https://mghodowla.pl/blog/aplikacja-dla-hodowcow-golebi.html): Aplikacja dla hodowców gołębi pocztowych: ewidencja, rodowody, łączenia i wyniki lotów w jednym programie. Co sprawdzić przed wyborem.
+- [Rodowód gołębia: wzór i co musi zawierać](https://mghodowla.pl/blog/rodowod-golebia-wzor.html): Wzór rodowodu gołębia pocztowego: jakie dane wpisać, jak ułożyć pokolenia przodków i jak przygotować rodowód do druku.
+- [Darmowy program do gołębi: czy warto?](https://mghodowla.pl/blog/darmowy-program-do-golebi.html): Darmowy program dla hodowców gołębi czy płatny? Na co uważać przy darmowych programach i wersjach próbnych, i ile czasu kosztuje ręczne wpisywanie rodowodów.
+- [Ewidencja gołębi pocztowych: jak ją prowadzić](https://mghodowla.pl/blog/ewidencja-golebi-pocztowych.html): Ewidencja gołębi pocztowych krok po kroku: jakie dane zapisywać, jak oznaczać statusy ptaków i dlaczego warto prowadzić ją w programie.
+- [Słownik hodowcy gołębi](https://mghodowla.pl/blog/slownik-hodowcy-golebi.html): Słownik hodowcy gołębi pocztowych: obrączka rodowa, rodowód, łączenie, ewidencja, MWG (OLR), konkurs, lista konkursowa i inne pojęcia wyjaśnione prosto.
+- [Benzing w OLR i MWG: elektroniczny pomiar przylotów](https://mghodowla.pl/blog/benzing-olr-mwg.html): Benzing w OLR i MWG: jak działa elektroniczne konstatowanie gołębi we wspólnym gołębniku i jak wykorzystać wyniki w rodowodach.
+- [Forum hodowców gołębi: gdzie szukać wiedzy](https://mghodowla.pl/blog/forum-hodowcow-golebi.html): Forum hodowców gołębi pocztowych: gdzie hodowcy wymieniają się wiedzą, o co pytać i jak korzystać z porad innych przy rodowodach i łączeniach.
+- [Hodowla gołębi pocztowych dla początkujących](https://mghodowla.pl/blog/hodowla-golebi-dla-poczatkujacych.html): Hodowla gołębi pocztowych dla początkujących: gołębnik, pierwsze ptaki, związek, obrączki i porządek w rodowodach od pierwszego dnia.
+- [Jak sprzedać gołębia pocztowego](https://mghodowla.pl/blog/jak-sprzedac-golebia-pocztowego.html): Jak sprzedać gołębia pocztowego: przygotowanie rodowodu, opis ogłoszenia, zdjęcia i dokumenty, które budują zaufanie kupującego.
+- [Program do rodowodów gołębi: pełny przewodnik](https://mghodowla.pl/blog/program-do-rodowodow-golebi-przewodnik.html): Pełny przewodnik po programach do rodowodów gołębi: funkcje, przenoszenie danych, rodowody ze zdjęć, MWG, telefon i komputer. Jak wybrać i wdrożyć.
+- [Rodowód gołębia od A do Z](https://mghodowla.pl/blog/rodowod-golebia-przewodnik.html): Wszystko o rodowodzie gołębia pocztowego: budowa, numery obrączek, wyniki, ocena przy zakupie, błędy, druk, PDF i prowadzenie rodowodów w programie.
+- [Numer obrączki gołębia: co oznacza każda część](https://mghodowla.pl/blog/numer-obraczki-golebia.html): Jak czytać numer obrączki gołębia pocztowego: kod kraju, oddział, rok i numer kolejny. Jak uniknąć pomyłek przy wpisywaniu.
+- [Kolory gołębi pocztowych i jak je zapisywać](https://mghodowla.pl/blog/kolory-golebi-pocztowych.html): Najczęstsze kolory upierzenia gołębi pocztowych i jak je jednolicie zapisywać w rodowodzie i ewidencji.
+- [Program do gołębi online czy na komputer?](https://mghodowla.pl/blog/program-do-golebi-online.html): Program do hodowli gołębi online czy instalowany na komputerze: zalety, wady i na co zwrócić uwagę przy wyborze.
+- [Chów wsobny gołębi: jak sprawdzić pokrewieństwo](https://mghodowla.pl/blog/chow-wsobny-golebi.html): Chów wsobny u gołębi pocztowych: czym jest, jak sprawdzić pokrewieństwo pary w rodowodach i jak świadomie planować łączenia.
+- [Moja Ewidencja Gołębi: jak przenieść dane do nowego programu](https://mghodowla.pl/blog/moja-ewidencja-golebi-alternatywa.html): Jak przenieść gołębie i rodowody z programu Moja Ewidencja Gołębi do Hodowli 3000 bez ręcznego przepisywania.
+- [Obrączkowanie młodych gołębi i zapis w ewidencji](https://mghodowla.pl/blog/obraczkowanie-mlodych-golebi.html): Obrączkowanie młodych gołębi pocztowych: kiedy zakładać obrączki i jak od razu zapisać młode w ewidencji i rodowodzie.
+- [Przygotowanie do sezonu lotowego: porządek w papierach](https://mghodowla.pl/blog/przygotowanie-do-sezonu-lotowego.html): Lista rzeczy do zrobienia w ewidencji i rodowodach przed sezonem lotów gołębi pocztowych.
+- [Rodowód gołębia w PDF: jak go wczytać i wysłać](https://mghodowla.pl/blog/rodowod-golebia-pdf.html): Rodowód gołębia w pliku PDF: jak wczytać go do programu bez przepisywania i jak wysłać kupcowi własny rodowód w PDF.
+
+## English
+
+- [Pigeon pedigree software (English)](https://mghodowla.pl/en/): Pigeclub, the English version of Hodowla 3000
+- [Features](https://mghodowla.pl/en/features.html)
+- [Pigeon breeder's guide](https://mghodowla.pl/en/blog/)
+- [How to read a racing pigeon pedigree](https://mghodowla.pl/en/blog/how-to-read-a-pigeon-pedigree.html): How to read a racing pigeon pedigree: ring number, colour, sex, ancestors and race results. A practical guide for breeders.
+- [Pigeon pedigree app: import from a photo](https://mghodowla.pl/en/blog/pigeon-pedigree-from-a-photo.html): A pigeon pedigree app that reads pedigrees from a phone photo or a PDF, so you never retype ring numbers and ancestors again.
+- [Pigeon pedigree template: what it must include](https://mghodowla.pl/en/blog/pigeon-pedigree-template.html): A racing pigeon pedigree template: which details to include, how to lay out the generations and how to prepare a pedigree for printing.
+- [How to print a pigeon pedigree](https://mghodowla.pl/en/blog/how-to-print-a-pigeon-pedigree.html): How to print a pigeon pedigree for a sale or a show: what a clear pedigree contains and how to prepare it in pedigree software.
+- [One loft race (OLR) pedigrees: how to prepare](https://mghodowla.pl/en/blog/one-loft-race-pedigrees.html): One loft races (OLR): how to prepare pedigrees for pigeons sent to a one loft race and how to use the results in your breeding.
+- [Pigeon pairing: how to plan with the pedigree](https://mghodowla.pl/en/blog/pigeon-pairing.html): Racing pigeon pairing: how to pair birds using pedigrees and results, avoid close inbreeding and strengthen your lines.
+- [Pigeon ring number: what each part means](https://mghodowla.pl/en/blog/pigeon-ring-number.html): How to read a racing pigeon ring number: country code, club, year and serial number, and how to avoid typing mistakes.
+- [Pigeon inbreeding: how to check relatedness](https://mghodowla.pl/en/blog/pigeon-inbreeding.html): Inbreeding in racing pigeons: what it is, how to check a pair's relatedness in their pedigrees and how to plan pairings deliberately.
+- [Pigeon pedigree PDF: import it and send it](https://mghodowla.pl/en/blog/pigeon-pedigree-pdf.html): Pigeon pedigrees as PDF files: how to import one into your software without retyping and how to send your own pedigree to a buyer.
+- [Racing season preparation: your records](https://mghodowla.pl/en/blog/racing-season-preparation.html): A checklist for your pigeon records and pedigrees before the racing season starts.
+- [Pigeclub](https://pigeclub.com/): official English website
+- [Pigeclub blog](https://pigeclub.com/blog)
+
+## Optional
+
+- [O serwisie](https://mghodowla.pl/o-serwisie.html): dane firmy i kontakt
